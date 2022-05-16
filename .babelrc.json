@@ -1,12 +1,23 @@
 {
+  "plugins": [
+    // 添加 transform-runtime 插件
+    [
+      "@babel/plugin-transform-runtime", 
+      {
+        "corejs": 3
+      }
+    ]
+  ],
   "presets": [
     [
       "@babel/preset-env", 
       {
-        // 指定兼容的浏览器版本
-        "targets": "ie >= 11, > 0.5%, not dead",
+        "targets": {
+          "ie": "11"
+        },
         "corejs": 3,
-        "useBuiltIns": "usage",
+        // 关闭 @babel/preset-env 默认的 Polyfill 注入
+        "useBuiltIns": false,
         "modules": false
       }
     ]
