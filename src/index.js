@@ -1,3 +1,6 @@
+import 'core-js';
+
+
 const func = async () => {
   console.log(12123)
 }
