@@ -6,7 +6,7 @@
         // 指定兼容的浏览器版本
         "targets": "ie >= 11, > 0.5%, not dead",
         "corejs": 3,
-        "useBuiltIns": "entry",
+        "useBuiltIns": "usage",
         "modules": false
       }
     ]
